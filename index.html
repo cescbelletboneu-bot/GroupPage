@@ -4,66 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Bienvenida</title>
-    <!-- Iconos sólidos de Font Awesome (estilo Flaticon) -->
+    <meta name="description" content="Un sitio web moderno con una estética vibrante y animaciones fluidas.">
+    <title>Bienvenido a MiProyecto</title>
+    <!-- Iconos sólidos de Font Awesome (como alternativa a Flaticon) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Efecto de fondo animado -->
+    <div class="bg-gradient-sphere"></div>
+    <div class="bg-gradient-sphere sphere-2"></div>
 
-    <!-- Menú de navegación no funcional -->
     <header>
         <nav class="navbar">
             <div class="logo">
                 <i class="fa-solid fa-layer-group"></i> MiProyecto
             </div>
             <ul class="nav-links">
-                <li><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i> Sobre nosotros</a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="introduccio.html"><i class="fa-solid fa-universal-access"></i> Introducció</a></li>
+                <li><a href="diversitat.html"><i class="fa-solid fa-wheelchair"></i> Diversitat</a></li>
+                <li><a href="ux-ui.html"><i class="fa-solid fa-object-group"></i> UX vs UI</a></li>
+                <li><a href="normativa.html"><i class="fa-solid fa-scale-balanced"></i> Normativa</a></li>
+                <li><a href="tecnologies.html"><i class="fa-solid fa-laptop-medical"></i> Tecnologies</a></li>
+                <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users"></i> Sobre Nosaltres</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Página de bienvenida básica (Hero Section) -->
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>¡Bienvenido a nuestro proyecto!</h1>
-                <p>Esta es una plantilla básica estructurada con la guía de estilos propuesta para nuestro sitio web.
-                </p>
-                <a href="#" class="btn-primary"><i class="fa-solid fa-rocket"></i> Descubrir más</a>
+                <h1 class="gradient-text">Impulsa tu visión</h1>
+                <p>Descubre una experiencia digital inmersiva diseñada con una paleta intensa y elegante, optimizada para destacar.</p>
+                <a href="#features" class="btn-primary">
+                    <span>Empezar ahora</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-panel main-panel">
+                    <i class="fa-solid fa-chart-pie panel-icon"></i>
+                    <h2>Analíticas</h2>
+                    <p>Visualiza tus datos en tiempo real.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Sección de tarjetas de características -->
-        <section class="features">
-            <div class="card">
-                <i class="fa-solid fa-palette card-icon"></i>
-                <h3>Paleta de Colores</h3>
-                <p>Diseñado con la gama de colores oficial (#424242, #754646, #A84343, #DB2C2C, #FF0000).</p>
+        <section id="features" class="features">
+            <div class="section-title">
+                <h2>¿Por qué elegirnos?</h2>
+                <div class="underline"></div>
             </div>
-            <div class="card">
-                <i class="fa-solid fa-font card-icon"></i>
-                <h3>Tipografía Noto</h3>
-                <p>Estilo tipográfico limpio utilizando la familia Noto Music / Sans.</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-icons card-icon"></i>
-                <h3>Iconos Sólidos</h3>
-                <p>Uso de fuentes de iconos estilo sólido siguiendo los criterios visuales.</p>
+            <div class="cards-container">
+                <div class="card glass-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Diseño Vibrante</h3>
+                    <p>Integración perfecta de la paleta oficial (#424242 al #FF0000) con efectos de cristal.</p>
+                </div>
+                <div class="card glass-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-font"></i>
+                    </div>
+                    <h3>Tipografía Noto</h3>
+                    <p>Legibilidad superior en cualquier dispositivo gracias a la familia Noto Sans.</p>
+                </div>
+                <div class="card glass-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Animaciones Fluidas</h3>
+                    <p>Micro-interacciones y transiciones suaves para una experiencia de usuario premium.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 Mi Proyecto - Listo para GitHub Pages</p>
+        <div class="footer-content">
+            <p>&copy; 2026 MiProyecto. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 </html>
