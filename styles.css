@@ -361,6 +361,19 @@ footer {
     background: rgba(255, 255, 255, 0.05);
 }
 
+.card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+/* Si hi ha foto, amagar el placeholder per evitar el tall lateral de la captura */
+.card-photo:not(.empty) .photo-placeholder {
+    display: none;
+}
+
 .photo-placeholder {
     color: var(--text-muted);
     font-size: 1.2rem;
@@ -397,6 +410,115 @@ footer {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
+}
+
+/* Botó de perfil (targetes d'equip) */
+.btn-profile {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, var(--color-4), var(--color-3));
+    color: var(--text-main);
+    padding: 0.7rem 1.4rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(219, 44, 44, 0.4);
+    border: 1px solid transparent;
+    margin-top: 0.5rem;
+}
+
+.btn-profile:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-profile[href="#"] {
+    opacity: 0.55;
+}
+
+/* Guia d'estils / Paleta */
+.section-note {
+    color: var(--text-muted);
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.style-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 0 2rem;
+}
+
+.style-block h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-main);
+}
+
+.palette {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.palette li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.palette code {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    background: rgba(0,0,0,0.3);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+}
+
+.swatch {
+    width: 42px;
+    height: 28px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+    flex-shrink: 0;
+}
+
+.type-sample {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.style-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--color-4);
+}
+
+.doc-note {
+    text-align: center;
+    color: var(--text-muted);
+    margin: 2.5rem 0 1rem;
+}
+
+.doc-note a {
+    color: var(--color-5);
+    font-weight: 700;
+}
+
+.doc-note a:hover {
+    text-decoration: underline;
 }
 
 .nav-links {
